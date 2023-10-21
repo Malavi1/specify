@@ -1,0 +1,107 @@
+body {
+  background-color: antiquewhite;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+nav ul {
+  display: flex;
+  height: 55px;
+  background-color: rgb(8, 8, 7);
+  color: white;
+  list-style-type: none;
+  align-items: center;
+}
+.brand img {
+  width: 55px;
+}
+nav ul li {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+span {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 700;
+}
+
+.container {
+  min-height: 65vh;
+  background-color: black;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  display: flex;
+  width: 70%;
+  margin: 25px auto;
+  border-radius: 10px;
+  padding: 20px;
+  background: url("godavari.jpg") no-repeat center center;
+  background-size: cover;
+}
+.movie {
+  color: rgb(252, 211, 3);
+  padding: 7px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.director {
+  color: rgb(0, 0, 0);
+  font-family: "Teko", sans-serif;
+}
+
+.buttom {
+  position: sticky;
+  height: 100px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.icons i {
+  cursor: pointer;
+}
+#progress {
+  width: 80wh;
+  margin-bottom: 5px;
+}
+.songitem {
+  height: 30px;
+  /* width: 80%; */
+  display: flex;
+  flex-direction: row;
+  /* background-color: rgb(195, 179, 158); */
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.cover {
+  width: 43px;
+  border-radius: 20%;
+}
+.songinfo {
+  position: absolute;
+  left: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.songinfo img {
+  width: 120px;
+  opacity: 0;
+  transition: opacity 0.1s ease-in;
+}
+#nowplay {
+  font-family: "Teko", sans-serif;
+  background-color: rgb(255, 213, 2);
+  color: black;
+  padding: 0 15px;
+  border-radius: 10px;
+}

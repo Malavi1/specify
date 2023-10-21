@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="brand">
+          <img src="spotify.jpg" alt="spotify-logo" /><span>Spotify</span>
+        </li>
+        <li>Home</li>
+        <li>About</li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="songlist">
+        <h1>
+          Best of <span class="movie">Godavari</span> ~
+          <span class="director">Shekar Kammula</span>
+        </h1>
+        <div>
+          <div class="songitem">
+            <img src="cover.jpg" class="cover" alt="first-song" />
+            <p>Uppogele Godavari</p>
+            <h6>
+              4:58 <i id="0" class="fa-solid songItemPlay fa-circle-play"></i>
+            </h6>
+          </div>
+          <div class="songitem">
+            <img src="cover.jpg" class="cover" alt="first-song" />
+            <p>Manasa Gelupu</p>
+
+            <h6>
+              4:06 <i id="1" class="fa-solid songItemPlay fa-circle-play"></i>
+            </h6>
+          </div>
+          <div class="songitem">
+            <img src="cover.jpg" class="cover" alt="first-song" />
+            <p>Tippulu Tappulu</p>
+            <h6>
+              4:31 <i id="2" class="fa-solid songItemPlay fa-circle-play"></i>
+            </h6>
+          </div>
+          <div class="songitem">
+            <img src="cover.jpg" class="cover" alt="first-song" />
+            <p>Rama Chakani Sita</p>
+            <h6>
+              3:52 <i id="3" class="fa-solid songItemPlay fa-circle-play"></i>
+            </h6>
+          </div>
+          <div class="songitem">
+            <img src="cover.jpg" class="cover" alt="first-song" />
+            <p>Andhmgalena</p>
+            <h6>
+              4:27 <i id="4" class="fa-solid songItemPlay fa-circle-play"></i>
+            </h6>
+          </div>
+          <div class="songitem">
+            <img src="cover.jpg" class="cover" alt="first-song" />
+            <p>Manasa Vacha</p>
+            <h6>
+              5.01 <i id="5" class="fa-solid songItemPlay fa-circle-play"></i>
+            </h6>
+          </div>
+        </div>
+      </div>
+      <div class="Banner"></div>
+    </div>
+    <div class="buttom">
+      <input
+        type="range"
+        name="range"
+        id="progress"
+        min="0"
+        max="100"
+        value="0"
+      />
+      <div class="icons">
+        <i id="previous" class="fa-solid fa-3x fa-backward-step"></i>
+        <i id="masterPlay" class="fa-solid fa-3x fa-circle-play"></i>
+        <i id="next" class="fa-solid fa-3x fa-forward-step"></i>
+      </div>
+      <div class="songinfo">
+        <img src="music.gif" alt="gif" id="gif" />
+        <p id="nowplay">Uppogele Godavari</p>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/bbe6f2c2c3.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
