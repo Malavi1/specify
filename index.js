@@ -54,7 +54,7 @@ Array.from(document.getElementsByClassName("songItemPlay")).forEach(
   (element) => {
     element.addEventListener("click", (e) => {
       makeAllplays();
-      nowplay.innerText = songsList[songIndex + 1].SongName;
+      nowplay.innerText = songsList[e.target.id].SongName;
       songIndex = parseInt(e.target.id);
       e.target.classList.remove("fa-circle-play");
       e.target.classList.add("fa-circle-pause");
@@ -71,7 +71,7 @@ document.getElementById("next").addEventListener("click", () => {
   makeAllplays();
   if (songIndex >= 5) {
     songIndex = 0;
-    nowplay.innerText = songsList[songIndex + 1].SongName;
+    nowplay.innerText = songsList[songIndex].SongName;
   } else {
     songIndex += 1;
     nowplay.innerText = songsList[songIndex].SongName;
@@ -87,7 +87,7 @@ document.getElementById("previous").addEventListener("click", () => {
   makeAllplays();
   if (songIndex < 0) {
     songIndex = 0;
-    nowplay.innerText = songsList[songIndex + 1].SongName;
+    nowplay.innerText = songsList[songIndex].SongName;
   } else {
     songIndex -= 1;
     nowplay.innerText = songsList[songIndex].SongName;
