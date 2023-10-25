@@ -1,3 +1,4 @@
+
 body {
   background-color: antiquewhite;
 }
@@ -105,3 +106,32 @@ span {
   padding: 0 15px;
   border-radius: 10px;
 }
+/* responsiveness */
+@media screen and (max-width: 617px) {
+  .songinfo {
+    left: 0px;
+  }
+  .songinfo img {
+    width: 70px;
+  }
+  #nowplay {
+    font-family: "Teko", sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+  }
+}
+/* responsiveness */
+@media screen and (max-width: 617px) {
+  .songinfo {
+    left: 0px;
+  }
+  .songinfo img {
+    width: 70px;
+  }
+  #nowplay {
+    font-family: "Teko", sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+  }
+}
+
