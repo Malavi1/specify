@@ -1,1 +1,1 @@
-# spootify
+# specify
